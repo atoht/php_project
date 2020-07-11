@@ -22,10 +22,11 @@
             echo '<tr>';
                 echo '<td>'.$rows[name].'</td>';
                 echo '<td>'.$rows[age].'</td>';
-                echo '<td><a href="del.php?id='.$rows[id].'">删除</a>/<a href="update.php?id='.$rows[id].'">添加</a></td>';
+                echo '<td><a href="del.php?id='.$rows[id].'">删除</a>/<a href="update.php?id='.$rows[id].'">修改</a></td>';
             echo '</td>';
         }
     echo '</table>';
+
 
     mysqli_close($DB_link);
     
